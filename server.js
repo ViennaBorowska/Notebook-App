@@ -12,3 +12,8 @@ const { builtinModules } = require('module');
 
 //Global variables
 const app = express();
+
+//Express set-up
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static('public'));
