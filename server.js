@@ -16,8 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
-//Routing
-//GET requests
+//Routing get requests
 app.get('/api/notes', (req, res) => {
   res.json(savedNotes.slice(1));
 });
@@ -32,4 +31,9 @@ app.get('/notes', (req, res) => {
 // Set random paths to homepage
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, './public/index.html'));
+});
+
+//Start server
+app.listen(PORT, () => {
+  console.log(`Example app listening at http://localhost:${PORT}`);
 });
