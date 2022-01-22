@@ -58,6 +58,27 @@ app.post('/api/notes', (req, res) => {
   res.json(newNote);
 });
 
+//Delete a note
+function noteDelete(id, notesArr) {
+  for (let i = 0; i < notesArr.length; i++) {
+    let note = notesArr[i];
+
+    if (note.id == id) {
+      notesArr.splice(i, 1);
+      fs.writeFileSync(
+        path.join(__dirname, './db/db.json'),
+        JSON.stringify(notesArr, null, 2)
+      );
+
+      break;
+    }
+  }
+}
+app.delete('/api/notes/:id', (req, res) => {
+  noteDelete(req.params.id, savedNotes);
+  res.json(true);
+});
+
 //Start server
 app.listen(PORT, () => {
   console.log(`Example app listening at http://localhost:${PORT}`);
