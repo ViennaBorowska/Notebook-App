@@ -1,13 +1,13 @@
 [
-  2,
+  6,
   {
-    "title": "Helen",
-    "text": "Call Helen",
-    "id": 0
+    "title": "Note App",
+    "text": "Make a note taker app",
+    "id": 4
   },
   {
-    "title": "Helen",
-    "text": "Help helen",
-    "id": 1
+    "title": "Deploy",
+    "text": "Deploy to Heroku",
+    "id": 5
   }
 ]
