@@ -4,9 +4,9 @@
 
 An application, using Express.js routing, to deliver a web page to write, save and delete notes. This application has been deployed to Heroku.
 
-<img src="img/SS1.jpg" alt="Screenshot of homepage - Note Taker App title with 'Get started' button.">
+<img src="img/SS1.JPG" alt="Screenshot of homepage - Note Taker App title with 'Get started' button.">
 
-<img src="img/SS2.jpg" alt="Screenshot of notebook page with 1 saved note in the left column, and 1 note being created.">
+<img src="img/SS2.JPG" alt="Screenshot of notebook page with 1 saved note in the left column, and 1 note being created.">
 
 ## LANGUAGE : JavaScript, HTML, CSS
 
