@@ -32,6 +32,7 @@ app.get('/notes', (req, res) => {
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, './public/index.html'));
 });
+
 //Make a new note
 function generateNote(body, notesArr) {
   const note = body;
